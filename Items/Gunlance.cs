@@ -23,7 +23,7 @@ namespace MonsterHunterTerra.Items
 			item.value = 10000;
 			item.rare = 2;
 			item.UseSound = SoundID.Item1;
-			item.autoReuse = true;
+			item.autoReuse = false;
 		}
 
 		public override void AddRecipes()
