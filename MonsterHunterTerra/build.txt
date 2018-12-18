@@ -1,0 +1,3 @@
+author = BananMoppel
+version = 0.1
+displayName = Monster Hunter: Terra
