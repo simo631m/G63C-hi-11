@@ -1,0 +1,80 @@
+ExampleMod not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+Tremor not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+Tremor not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+Tremor not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+Tremor not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+Failed to read AlchemistNPC's config file! Recreating config...
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+AlchemistNPC not fully unloaded during unload.
+CheatSheet not fully unloaded during unload.
+ExampleMod not fully unloaded during unload.
+MonsterHunterTerra not fully unloaded during unload.
+Silently Caught Exception: Tråden blev afbrudt.   ved System.Threading.Thread.AbortInternal()
+   ved System.Threading.Thread.Abort()   ved Terraria.ModLoader.ModCompile.<>c.<ActivateExceptionReporting>b__15_0(Object sender, FirstChanceExceptionEventArgs exceptionArgs)
+   ved System.Threading.Thread.AbortInternal()
+   ved System.Threading.Thread.Abort()
+   ved Microsoft.Xna.Framework.WindowsManagedCallbackHandler.WaitForAsyncOperationToFinish(ManagedCallType& managedCallType, UInt32& managedCallArgs)
+   ved Microsoft.Xna.Framework.UserAsyncDispatcher.AsyncDispatcherThreadFunction()
+   ved System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   ved System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   ved System.Threading.ThreadHelper.ThreadStart()
+

@@ -1,0 +1,17 @@
+{
+  "StarPrice": 1000,
+  "TreasureBagsShop": true,
+  "TornNotesDrop": true,
+  "CoinsDrop": true,
+  "StartMessage": true,
+  "AlchemistSpawn": true,
+  "BrewerSpawn": true,
+  "JewelerSpawn": true,
+  "ArchitectSpawn": true,
+  "YoungBrewerSpawn": true,
+  "OperatorSpawn": true,
+  "ExplorerSpawn": true,
+  "MusicianSpawn": true,
+  "RevPrices": true,
+  "PotsPriceMulti": 2
+}

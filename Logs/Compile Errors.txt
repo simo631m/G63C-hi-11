@@ -1,0 +1,2 @@
+c:\Users\Mathias Thorsager\Documents\My Games\Terraria\ModLoader\Mod Sources\MonsterHunterTerra\Items\Weapons\Gunlance.cs(55,26) : error CS0103: Navnet 'bullet' findes ikke i den aktuelle sammenhæng
+
