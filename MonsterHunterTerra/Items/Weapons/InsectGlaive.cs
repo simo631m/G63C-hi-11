@@ -90,7 +90,7 @@ namespace MonsterHunterTerra.Items.Weapons
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Bar1", 26);
-            recipe.AddTile(16);
+            recipe.AddTile(null, "MachaliteForgeTile");
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

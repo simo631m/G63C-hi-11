@@ -61,7 +61,7 @@ namespace MonsterHunterTerra.Items.Tools
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "Bar1", 13);
-			recipe.AddTile(16);
+			recipe.AddTile(null, "MachaliteForgeTile");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
     
