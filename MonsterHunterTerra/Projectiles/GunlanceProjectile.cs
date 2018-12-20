@@ -1,11 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-
+using System;
 namespace MonsterHunterTerra.Projectiles
 {
     public class GunlanceProjectile : ModProjectile
     {
+        public int counter = 0;
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Gunlance");
@@ -77,12 +80,26 @@ namespace MonsterHunterTerra.Projectiles
             {
                 projectile.rotation -= MathHelper.ToRadians(90f);
             }
+            counter++;
 
-            
         }
 
-        
 
+       
+
+        public override void Kill(int timeLeft)
+        {
+            if (counter >= 30)
+            {
+                Player player = Main.player[projectile.owner];
+                Vector2 vector82 = -Main.player[Main.myPlayer].Center + Main.MouseWorld;
+                float ai = Main.rand.Next(100);
+                Vector2 vector83 = Vector2.Normalize(vector82) * 20f;
+                Projectile.NewProjectile(player.Center.X, player.Center.Y, vector83.X, vector83.Y, 580, projectile.damage / 2, .5f, player.whoAmI, vector82.ToRotation(), ai);
+               
+                counter = 0;
+            }
+        }
 
     }
 }

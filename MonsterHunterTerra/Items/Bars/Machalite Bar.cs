@@ -32,7 +32,7 @@ namespace MonsterHunterTerra.Items.Bars
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Ore1v2", 3);
             recipe.SetResult(this);
-            recipe.AddTile(33);
+            recipe.AddTile(17);
             recipe.AddRecipe();
         }
 

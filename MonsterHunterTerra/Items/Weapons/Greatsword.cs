@@ -63,8 +63,8 @@ namespace MonsterHunterTerra.Items.Weapons
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.IronBar, 26);
-            recipe.AddTile(TileID.WorkBenches);
+            recipe.AddIngredient(null, "Bar1", 26);
+            recipe.AddTile(16);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
