@@ -29,7 +29,7 @@ namespace MonsterHunterTerra.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Mechalite Forge");
-            Tooltip.SetDefault("");
+            Tooltip.SetDefault("Combines the function of the anvil and furnace");
 
         }
 
@@ -38,6 +38,7 @@ namespace MonsterHunterTerra.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Ore1v2", 30);
             recipe.AddIngredient(33, 1);
+            recipe.AddIngredient(35, 1);
             recipe.AddTile(16);
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -35,18 +35,17 @@ using Terraria.ModLoader.IO;
 
 namespace MonsterHunterTerra.Items.Weapons
 {
-    public class InsectGlaive : ModItem
+    public class DualBlades : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("\n[c/FF0000:Tier 1 InsectGlaive. ]"
-                +"\nRight click for different attack");
-            DisplayName.SetDefault("Insect Glaive");
+            Tooltip.SetDefault("\n[c/FF0000:Tier 1 DualBlades. ]"
+                + "\nRight click for different attack");
+            DisplayName.SetDefault("Dual Blades");
         }
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(3858);
             item.melee = true;
             item.damage = 11;
             item.crit = 11;
@@ -56,7 +55,9 @@ namespace MonsterHunterTerra.Items.Weapons
             item.rare = 3;
             item.knockBack = 10;
             item.scale = 2f;
-            item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+            item.useStyle = 1;
+            
+
         }
 
         public override bool AltFunctionUse(Player player)
@@ -68,23 +69,44 @@ namespace MonsterHunterTerra.Items.Weapons
         {
             if (player.altFunctionUse != 2)
             {
-                item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+                item.melee = true;
+                item.damage = 11;
+                item.crit = 11;
+                item.width = 50;
+                item.height = 40;
+                item.value = 100000;
+                item.rare = 3;
+                item.knockBack = 10;
+                item.scale = 2f;
+                item.useStyle = 1;
+                item.useTime = 15;
+                item.useAnimation = 15;
+                item.mana = 0;
+                item.autoReuse = false;
+
 
             }
             if (player.altFunctionUse == 2)
             {
-                item.useTime = 15;
-                item.useAnimation = 15;
+                item.useTime = 5;
+                item.useAnimation = 5;
                 item.damage = 11;
-                item.shootSpeed = 10f;
-                item.shoot = mod.ProjectileType("InsectGlaiveProjectile2");
-                item.noMelee = true;
-                item.noUseGraphic = true;
+                item.width = 50;
+                item.height = 40;
+                item.mana = 1;
+                item.useStyle = 1;
+                item.autoReuse = true;
+
+
+
+
             }
 
             return base.CanUseItem(player);
 
         }
+
+     
 
         public override void AddRecipes()
         {

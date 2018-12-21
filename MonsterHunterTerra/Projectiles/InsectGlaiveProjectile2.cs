@@ -8,7 +8,7 @@ using System;
 
 namespace MonsterHunterTerra.Projectiles
 {
-    public class InsectGlaiveProjectile : ModProjectile
+    public class InsectGlaiveProjectile2 : ModProjectile
     {
         public override void SetStaticDefaults()
         {
@@ -17,18 +17,18 @@ namespace MonsterHunterTerra.Projectiles
 
 
 
-        
-    
-            
-         public override void SetDefaults()
-            {
-                projectile.CloneDefaults(181);
-                projectile.width = 22;
-                projectile.height = 14;
-               
-                aiType = 181;
-            }
+
+
+
+        public override void SetDefaults()
+        {
+            projectile.CloneDefaults(181);
+            projectile.width = 22;
+            projectile.height = 14;
+
+            aiType = 181;
+        }
     }
 
-   
+
 }

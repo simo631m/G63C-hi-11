@@ -35,12 +35,12 @@ using Terraria.ModLoader.IO;
 
 namespace MonsterHunterTerra.Items.Weapons
 {
-    public class InsectGlaive : ModItem
+    public class InsectGlaive2 : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("\n[c/FF0000:Tier 1 InsectGlaive. ]"
-                +"\nRight click for different attack");
+            Tooltip.SetDefault("\n[c/FF0000:Tier 2 InsectGlaive. ]"
+                + "\nRight click for different attack");
             DisplayName.SetDefault("Insect Glaive");
         }
 
@@ -48,7 +48,7 @@ namespace MonsterHunterTerra.Items.Weapons
         {
             item.CloneDefaults(3858);
             item.melee = true;
-            item.damage = 11;
+            item.damage = 21;
             item.crit = 11;
             item.width = 50;
             item.height = 40;
@@ -56,7 +56,7 @@ namespace MonsterHunterTerra.Items.Weapons
             item.rare = 3;
             item.knockBack = 10;
             item.scale = 2f;
-            item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+            item.shoot = mod.ProjectileType("InsectGlaiveSwing");
         }
 
         public override bool AltFunctionUse(Player player)
@@ -68,16 +68,16 @@ namespace MonsterHunterTerra.Items.Weapons
         {
             if (player.altFunctionUse != 2)
             {
-                item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+                item.shoot = mod.ProjectileType("InsectGlaiveSwing");
 
             }
             if (player.altFunctionUse == 2)
             {
                 item.useTime = 15;
                 item.useAnimation = 15;
-                item.damage = 11;
+                item.damage = 21;
                 item.shootSpeed = 10f;
-                item.shoot = mod.ProjectileType("InsectGlaiveProjectile2");
+                item.shoot = mod.ProjectileType("InsectGlaiveProjectile");
                 item.noMelee = true;
                 item.noUseGraphic = true;
             }
@@ -89,7 +89,7 @@ namespace MonsterHunterTerra.Items.Weapons
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "Bar1", 26);
+            recipe.AddIngredient(175, 26);
             recipe.AddTile(null, "MachaliteForgeTile");
             recipe.SetResult(this);
             recipe.AddRecipe();
