@@ -51,12 +51,12 @@ namespace MonsterHunterTerra.Items.Weapons
             item.damage = 11;
             item.crit = 11;
             item.width = 50;
-            item.height = 40;
+            item.height = 50;
             item.value = 100000;
             item.rare = 3;
             item.knockBack = 10;
-            item.scale = 2f;
-            item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+            item.scale = 3f;
+            item.shoot = mod.ProjectileType("InsectGlaiveSwing");
         }
 
         public override bool AltFunctionUse(Player player)
@@ -68,7 +68,7 @@ namespace MonsterHunterTerra.Items.Weapons
         {
             if (player.altFunctionUse != 2)
             {
-                item.shoot = mod.ProjectileType("InsectGlaiveSwing2");
+                item.shoot = mod.ProjectileType("InsectGlaiveSwing");
 
             }
             if (player.altFunctionUse == 2)
@@ -77,7 +77,7 @@ namespace MonsterHunterTerra.Items.Weapons
                 item.useAnimation = 15;
                 item.damage = 11;
                 item.shootSpeed = 10f;
-                item.shoot = mod.ProjectileType("InsectGlaiveProjectile2");
+                item.shoot = mod.ProjectileType("InsectGlaiveProjectile");
                 item.noMelee = true;
                 item.noUseGraphic = true;
             }
