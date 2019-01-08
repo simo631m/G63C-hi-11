@@ -35,24 +35,24 @@ using MonsterHunterTerra;
 
 namespace MonsterHunterTerra.Items.Weapons
 {
-    public class Greatsword2 : ModItem
+    public class Hammer : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("GreatSword");
-            Tooltip.SetDefault("\n[c/FF0000:Tier 2 GreatSword ]");
+            DisplayName.SetDefault("Machalite Hammer");
+            Tooltip.SetDefault("\n[c/FF0000:Tier 1 Hammer ]");
         }
 
         public override void SetDefaults()
         {
-            item.damage = 88;
+            item.damage = 48;
             item.width = 60;
             item.height = 60;
             item.melee = true;
-            item.useTime = 50;
-            item.useAnimation = 50;
+            item.useTime = 40;
+            item.useAnimation = 40;
             item.useStyle = 1;
-            item.knockBack = 5f;
+            item.knockBack = 3f;
             item.value = 10000;
             item.rare = 3;
             item.UseSound = SoundID.Item1;
@@ -64,7 +64,7 @@ namespace MonsterHunterTerra.Items.Weapons
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "Bar2", 26);
+            recipe.AddIngredient(null, "Bar1", 26);
             recipe.AddTile(null, "MachaliteForgeTile");
             recipe.SetResult(this);
             recipe.AddRecipe();

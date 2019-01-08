@@ -64,7 +64,7 @@ namespace MonsterHunterTerra.Items.Weapons
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(175, 26);
+            recipe.AddIngredient(null, "Bar2", 26);
             recipe.AddTile(null, "MachaliteForgeTile");
             recipe.SetResult(this);
             recipe.AddRecipe();

@@ -24,6 +24,20 @@ namespace MonsterHunterTerra.NPCs
                 MonsterHunterTerraWorld.spawnOre = true;   //so the message and the ore spawn does not proc(show) when you kill EoC/npc again
             }
 
+            if (npc.type == NPCID.SkeletronPrime)
+            {
+                if (!MonsterHunterTerraWorld.spawnOre2)
+                {                                                          //Red  Green Blue
+                    Main.NewText("The world has been blessed with Fucium Ore", 200, 200, 55);  //this is the message that will appear when the npc is killed  , 200, 200, 55 is the text color
+                    for (int k = 0; k < (int)((double)(WorldGen.rockLayer * Main.maxTilesY) * 40E-05); k++)   //40E-05 is how many veins ore is going to spawn , change 40 to a lover value if you want less vains ore or higher value for more veins ore
+                    {
+                        int X = WorldGen.genRand.Next(0, Main.maxTilesX);
+                        int Y = WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY - 210); //this is the coordinates where the veins ore will spawn, so in Cavern layer
+                        WorldGen.OreRunner(X, Y, WorldGen.genRand.Next(8, 13), WorldGen.genRand.Next(6, 8), (ushort)mod.TileType("Ore2Tile"));   //WorldGen.genRand.Next(9, 15), WorldGen.genRand.Next(5, 9) is the vein ore sizes, so 9 to 15 blocks or 5 to 9 blocks, mod.TileType("CustomOreTile") is the custom tile that will spawn
+                    }
+                }
+                MonsterHunterTerraWorld.spawnOre2 = true;   //so the message and the ore spawn does not proc(show) when you kill EoC/npc again
+            }
 
         }
     }

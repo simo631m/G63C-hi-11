@@ -31,47 +31,53 @@ using Terraria.World.Generation;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using MonsterHunterTerra;
+using MonsterHunterTerra.Projectiles;
 
 namespace MonsterHunterTerra.Items.Weapons
 {
-    public class Greatsword2 : ModItem
+    public class Lance2 : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("GreatSword");
-            Tooltip.SetDefault("\n[c/FF0000:Tier 2 GreatSword ]");
+            DisplayName.SetDefault("Lance");
+            Tooltip.SetDefault("\n[c/FF0000:Tier 2 Lance ]");
         }
-
         public override void SetDefaults()
         {
-            item.damage = 88;
+            item.damage = 26;
             item.width = 60;
             item.height = 60;
             item.melee = true;
-            item.useTime = 50;
-            item.useAnimation = 50;
-            item.useStyle = 1;
-            item.knockBack = 5f;
+            item.noMelee = true;
+            item.noUseGraphic = true;
+            item.useTime = 30;
+            item.shoot = mod.ProjectileType<LanceProjectile>();
+            item.shootSpeed = 3f;
+            item.useAnimation = 24;
+            item.useStyle = 5;
+            item.knockBack = 3f;
             item.value = 10000;
             item.rare = 3;
             item.UseSound = SoundID.Item1;
             item.autoReuse = false;
 
-
         }
+
+
+
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "Bar2", 26);
+            recipe.AddIngredient(null, "Bar2", 13);
             recipe.AddTile(null, "MachaliteForgeTile");
             recipe.SetResult(this);
             recipe.AddRecipe();
 
-
         }
 
-    }
 
+
+
+    }
 }

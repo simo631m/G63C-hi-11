@@ -31,47 +31,58 @@ using Terraria.World.Generation;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using MonsterHunterTerra;
+
 
 namespace MonsterHunterTerra.Items.Weapons
 {
-    public class Greatsword2 : ModItem
+    public class SwitchAxeIn2 : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("GreatSword");
-            Tooltip.SetDefault("\n[c/FF0000:Tier 2 GreatSword ]");
+            Tooltip.SetDefault("\n[c/FF0000:Tier 2 Switch Axe. ]"
+               + "\nRight click in inventory to change Weapon ");
+            DisplayName.SetDefault("Switch Axe");
+
         }
 
         public override void SetDefaults()
         {
-            item.damage = 88;
-            item.width = 60;
-            item.height = 60;
+
             item.melee = true;
-            item.useTime = 50;
-            item.useAnimation = 50;
+            item.damage = 47;
+            item.crit = 21;
+            item.width = 50;
+            item.height = 40;
             item.useStyle = 1;
-            item.knockBack = 5f;
-            item.value = 10000;
-            item.rare = 3;
-            item.UseSound = SoundID.Item1;
-            item.autoReuse = false;
+            item.useTime = 30;
+            item.useAnimation = 30;
+            item.value = 10000000;
+            item.rare = 11;
+            item.knockBack = 10;
+
 
 
         }
 
-        public override void AddRecipes()
+        public override bool AltFunctionUse(Player player)
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "Bar2", 26);
-            recipe.AddTile(null, "MachaliteForgeTile");
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-
+            return true;
         }
+
+
+
+        public override bool CanRightClick()
+        {
+            return true;
+        }
+
+        public override void RightClick(Player player)
+        {
+            Item.NewItem((int)player.position.X, (int)player.position.Y, player.width, player.height, mod.ItemType("SwitchAxeOut2"));
+        }
+
+
+
 
     }
-
 }

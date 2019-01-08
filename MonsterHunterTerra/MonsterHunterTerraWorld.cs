@@ -17,5 +17,7 @@ namespace MonsterHunterTerra
     public class MonsterHunterTerraWorld : ModWorld
     {
        public static bool spawnOre = false;
+        public static bool spawnOre2 = false;
+
     }
 }
